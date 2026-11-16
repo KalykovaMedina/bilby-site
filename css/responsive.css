@@ -1,0 +1,182 @@
+/* ============================================
+   BILBY — Адаптивность
+   ============================================ */
+
+/* ---------- Планшеты (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+    .world-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .world-image img {
+        height: 40vh;
+    }
+
+    .journey-track {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .journey-frame img {
+        height: 35vh;
+    }
+
+    .meaning-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .section-encounter {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .encounter-content {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .section-encounter::after {
+        background: linear-gradient(0deg, transparent 10%, var(--bg-primary) 90%);
+    }
+}
+
+/* ---------- Мобильные (≤ 768px) ---------- */
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 4rem 1.25rem;
+        min-height: auto;
+    }
+
+    .section-hero {
+        min-height: 100vh;
+        padding: 0 1.25rem;
+    }
+
+    .hero-title {
+        font-size: clamp(3.5rem, 22vw, 7rem);
+    }
+
+    .hero-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.25em;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .scroll-hint {
+        margin-top: 2.5rem;
+    }
+
+    .side-nav {
+        display: none;
+    }
+
+    /* Мобильный индикатор прогресса (вместо боковой навигации) */
+    .progress-bar {
+        height: 4px;
+    }
+
+    .world-grid {
+        margin-bottom: 3rem;
+    }
+
+    .world-image img {
+        height: 30vh;
+    }
+
+    .film-meta {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .journey-track {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-frame img {
+        height: 30vh;
+    }
+
+    .meaning-statement {
+        font-size: 1.5rem;
+        margin: 2rem 0 3rem;
+    }
+
+    .think-question {
+        font-size: 1.4rem;
+    }
+
+    .think-option {
+        font-size: 0.95rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .btn-play {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+
+    .final-quote {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .final-title {
+        font-size: clamp(2.5rem, 15vw, 5rem);
+    }
+
+    .video-wrapper {
+        margin-top: 2rem;
+    }
+
+    .video-note {
+        font-size: 0.75rem;
+    }
+}
+
+/* ---------- Очень маленькие экраны (≤ 480px) ---------- */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 3.2rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .film-meta {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.75rem;
+    }
+
+    .meaning-card h3 {
+        font-size: 0.8rem;
+    }
+
+    .think-response {
+        font-size: 1.1rem;
+    }
+}
+
+/* ---------- Отсутствие горизонтальной прокрутки ---------- */
+body {
+    overflow-x: hidden;
+}
+
+img, video, iframe {
+    max-width: 100%;
+}
